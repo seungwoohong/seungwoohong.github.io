@@ -1,0 +1,8 @@
+allowBuilds:
+  # 이미지 최적화를 끈(unoptimized) 정적 사이트라 sharp 네이티브 빌드 불필요
+  sharp: false
+  # eslint 네이티브 리졸버 — 빌드 허용해 정상 동작 보장
+  unrs-resolver: true
+minimumReleaseAgeExclude:
+  - framer-motion@12.41.0
+  - motion-dom@12.41.0
