@@ -1,5 +1,6 @@
 import { Section } from "@/components/Section";
 import { Reveal, RevealItem } from "@/components/motion/Reveal";
+import { emphasize } from "@/lib/emphasize";
 import { about } from "@/data/portfolio";
 
 function renderLead(text: string) {
@@ -34,7 +35,7 @@ export function About() {
               as="p"
               className="text-base leading-relaxed text-muted sm:text-[17px]"
             >
-              {p}
+              {emphasize(p)}
             </RevealItem>
           ))}
         </Reveal>

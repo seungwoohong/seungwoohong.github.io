@@ -1,17 +1,25 @@
 import { Section } from "@/components/Section";
 import { Reveal, RevealItem } from "@/components/motion/Reveal";
 import { TiltCard } from "@/components/motion/TiltCard";
+import { LinkIcon } from "@/components/LinkIcon";
 import { emphasize } from "@/lib/emphasize";
 import { projects } from "@/data/portfolio";
 
 export function Projects() {
   return (
     <Section id="projects" index="03" title="Projects">
+      <p className="mb-8 max-w-2xl text-[15px] leading-relaxed text-muted">
+        경력 전반에서 만든 작업들을 무엇을 어떻게 만들었고 어떤 결과로 이어졌는지
+        중심으로 담았습니다. <span className="text-foreground">FEATURED</span>가 대표작입니다.
+      </p>
       <Reveal className="grid gap-5 sm:grid-cols-2">
         {projects.map((p) => (
           <RevealItem key={p.title}>
             <TiltCard className="group h-full" max={4}>
-              <div className="relative flex h-full flex-col gap-5 overflow-hidden rounded-2xl border border-border bg-card p-6 transition-colors duration-300 group-hover:border-[var(--accent)]/60 sm:p-7">
+              <div
+                id={`project-${p.id}`}
+                className="relative flex h-full scroll-mt-24 flex-col gap-5 overflow-hidden rounded-2xl border border-border bg-card p-6 transition-colors duration-300 group-hover:border-[var(--accent)]/60 sm:p-7"
+              >
                 <div
                   aria-hidden
                   className="pointer-events-none absolute -right-20 -top-20 h-44 w-44 rounded-full bg-[var(--accent)] opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-15"
@@ -35,6 +43,7 @@ export function Projects() {
                   <h3 className="text-xl font-semibold tracking-tight text-foreground">
                     {p.title}
                   </h3>
+                  <p className="font-mono text-xs text-subtle">{p.context}</p>
                   <p className="text-[15px] leading-relaxed text-muted">
                     {p.summary}
                   </p>
@@ -67,19 +76,17 @@ export function Projects() {
                 </div>
 
                 {p.links && p.links.length > 0 && (
-                  <div className="relative flex flex-wrap gap-4">
+                  <div className="relative flex flex-wrap gap-2.5">
                     {p.links.map((l) => (
                       <a
                         key={l.label}
                         href={l.href}
                         target={l.href.startsWith("http") ? "_blank" : undefined}
                         rel="noreferrer"
-                        className="group/link inline-flex items-center gap-1 text-sm font-medium text-foreground transition-colors hover:text-[var(--accent)]"
+                        className="group/link inline-flex items-center gap-1.5 rounded-lg border border-[var(--accent)]/45 bg-[color-mix(in_srgb,var(--accent)_10%,transparent)] px-3 py-1.5 text-sm font-semibold text-[var(--accent)] transition-colors hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--accent-contrast)]"
                       >
+                        <LinkIcon label={l.label} />
                         {l.label}
-                        <span className="transition-transform group-hover/link:translate-x-0.5">
-                          →
-                        </span>
                       </a>
                     ))}
                   </div>

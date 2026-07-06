@@ -1,8 +1,30 @@
-# seungwoohong.github.io
+# 홍승우 · Seungwoo Hong
 
-시니어 프론트엔드 엔지니어 포트폴리오. Next.js(App Router) 정적 export 기반, 미니멀·타이포 중심 디자인에 절제된 인터랙션을 더한 1페이지 사이트입니다.
+**Product-Minded Frontend Engineer** — 제품의 문제 정의부터 프론트엔드 아키텍처, UX 개선, 운영 자동화까지 주도하며 사용자 경험과 비즈니스 성과를 함께 만듭니다.
 
-## 기술 스택
+🔗 **[seungwoohong.github.io](https://seungwoohong.github.io)** · 📄 [이력서(PDF)](./public/resume.pdf) · ✉️ seungwoo921226@gmail.com
+
+물류 플랫폼 프론트엔드 팀 리드로 WMS·OMS를 런칭부터 스케일업까지 총괄했고, 현재는 글로벌 웹툰 서비스 **Tappytoon**의 웹 프론트엔드를 맡고 있습니다. 이 저장소는 그 경력을 한 페이지에 담은 개인 포트폴리오 사이트의 소스입니다.
+
+## 구성 원칙 — "역할"과 "산출물"을 분리했다
+
+이력서가 프로젝트 설명의 나열로 읽히지 않도록, 세 축이 **각자 다른 질문에 답하고 서로 중복하지 않게** 나눴습니다.
+
+| 섹션 | 답하는 질문 | 담는 것 |
+| --- | --- | --- |
+| **About** | 어떤 사람인가 | 개발 철학, 핵심 역량, 커리어 대표 지표 |
+| **Experience** | 어디서 · 무슨 역할로 · 무엇을 **이끌었나** | 회사별 역할·책임·리더십 서사, 관련 프로젝트로 연결 |
+| **Projects** | 구체적으로 무엇을 **만들었나** | 프로젝트별 문제·접근·정량 성과(대표작 FEATURED 우선) |
+| **Skills** | 무엇을 다루나 | 언어·프레임워크·상태관리·시각화·인프라·실무 역량 |
+| **Beyond Code** | 코드 밖에서 무엇을 하나 | 오픈소스, 기술 글쓰기, 커뮤니티·멘토링 |
+| **Education** | 배경 | 학력 및 자격증 |
+| **Contact** | 어떻게 닿나 | 이메일·소셜 링크 |
+
+핵심은 **Experience와 Projects의 역할 분리**입니다. Experience는 "팀 리드로 무엇을 소유하고 이끌었는지"의 서사만 담고, 프로젝트별 수치(배포 75% 단축, 1만+ 레코드 무프리즈 렌더링 등)는 **Projects에만** 둡니다. 대신 각 경력에는 "관련 프로젝트" 링크를 붙여 클릭하면 해당 대표작으로 바로 이어지도록 했습니다. 같은 성과를 두 번 설명하지 않으면서도 "어디서 → 무엇을"의 맥락이 끊기지 않습니다.
+
+> 대표 이력: Fulfilment 플랫폼 프론트엔드 팀 리드 — WMS/OMS 런칭·스케일업, 디자인 시스템·CI/CD·i18n 파이프라인 구축, 1만+ 레코드 무(無)프리즈 렌더링, PixiJS·ThreeJS 재고 시각화로 시리즈 A 투자 유치 기여.
+
+## 기술 스택 (이 사이트)
 
 - **Next.js 16** (App Router, `output: "export"` 정적 생성)
 - **TypeScript** · **Tailwind CSS v4**
@@ -25,30 +47,3 @@ pnpm build       # 정적 export → out/
 ```bash
 pnpm dlx serve out
 ```
-
-## 내 정보로 바꾸기
-
-거의 모든 콘텐츠는 **한 파일**에 모여 있습니다:
-
-- `src/data/portfolio.ts` — 이름·소개·경력·프로젝트·스킬·소셜 링크·네비게이션
-- `public/resume.pdf` — 이력서 PDF를 이 파일로 교체
-- `src/app/layout.tsx` — SEO/OpenGraph 메타데이터(필요 시 `siteUrl` 등)
-
-컴포넌트 코드를 건드리지 않고 `portfolio.ts`만 수정하면 사이트 전체가 갱신됩니다.
-
-## 배포 (GitHub Pages)
-
-1. 레포 이름을 반드시 **`seungwoohong.github.io`** 로 만들어 push합니다.
-2. GitHub 레포 → **Settings → Pages → Build and deployment → Source** 를 **GitHub Actions** 로 설정합니다.
-3. `main` 브랜치에 push하면 `.github/workflows/deploy.yml` 이 빌드 후 자동 배포합니다.
-4. 잠시 후 `https://seungwoohong.github.io` 에서 확인할 수 있습니다.
-
-> `output: "export"` + `images.unoptimized` 설정으로 서버 없이 순수 정적 파일만 배포됩니다.
-> `public/.nojekyll` 덕분에 `_next/` 경로가 Jekyll에 의해 무시되지 않습니다.
-
-## 접근성 · 성능
-
-- 모든 인터랙션은 `prefers-reduced-motion` 을 존중합니다(모션 최소화).
-- 터치/모바일 환경에서는 관성 스크롤을 비활성화해 네이티브 스크롤을 보존합니다.
-- 애니메이션은 `transform`/`opacity` 위주로 구성해 리플로우를 피합니다.
-- 스크롤 리빌은 뷰포트 진입 시 1회만 트리거됩니다.

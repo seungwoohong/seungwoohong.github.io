@@ -64,7 +64,24 @@ export function BeyondCode() {
                   aria-hidden
                   className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[var(--accent)]"
                 />
-                <span>{c}</span>
+                {c.href ? (
+                  <a
+                    href={c.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="group/act inline-flex items-start gap-1 text-foreground transition-colors hover:text-[var(--accent)]"
+                  >
+                    <span>{c.text}</span>
+                    <span
+                      aria-hidden
+                      className="text-[var(--accent)] transition-transform group-hover/act:translate-x-0.5"
+                    >
+                      ↗
+                    </span>
+                  </a>
+                ) : (
+                  <span>{c.text}</span>
+                )}
               </RevealItem>
             ))}
           </ul>
