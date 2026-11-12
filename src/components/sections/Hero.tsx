@@ -29,7 +29,7 @@ export function Hero() {
           )}
           {profile.available
             ? "협업 제안 받는 중"
-            : `${profile.yearsOfExperience}년차 Frontend Engineer · ${profile.location}`}
+            : `${profile.yearsOfExperience}년차 Software Engineer · Frontend · ${profile.location}`}
         </motion.div>
 
         <RevealText

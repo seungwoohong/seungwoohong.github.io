@@ -2,7 +2,7 @@
 export const profile = {
   name: "홍승우",
   nameEn: "Seungwoo Hong",
-  role: "Product-Minded Frontend Engineer",
+  role: "Product-Minded Software Engineer (Frontend)",
   tagline:
     "제품의 문제 정의부터 프론트엔드 아키텍처, UX 개선, 운영 자동화까지 주도하며 사용자 경험과 비즈니스 성과를 함께 만듭니다.",
   location: "Seoul, Korea",
@@ -26,7 +26,7 @@ export const socials = [
 export const about = {
   lead: "{사용자를 위한 질 높은 제품}을 만드는 것, 그것이 제 개발의 기준입니다.",
   paragraphs: [
-    "{10년 차 프론트엔드 개발자}로, {React·TypeScript} 기반 물류 SaaS 플랫폼을 런칭부터 스케일업까지 {5년간 프론트엔드 리드}로 총괄했습니다.",
+    "{10년 차 프론트엔드 중심 소프트웨어 엔지니어}로, {React·TypeScript} 기반 물류 SaaS 플랫폼을 런칭부터 스케일업까지 {5년간 프론트엔드 리드}로 총괄했습니다.",
     "{기술을 비즈니스 성과로 연결}하는 개발을 지향합니다. 제품에서는 {웹 접근성과 UI/UX}를 점진적으로 개선해 사용자 편의성을 높였고, 2D/3D 재고 시각화와 가상 DAS SaaS 개발로 {수십억 규모 시리즈 A 투자 유치}와 {신규 매출 창출}에 기여했습니다.",
     "팀에서는 {코드 리뷰 문화 표준화}와 {업무 자동화}로 개발 병목을 줄이며 {전체 생산성}을 끌어올려 왔습니다.",
   ],

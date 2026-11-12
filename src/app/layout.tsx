@@ -23,6 +23,8 @@ export const metadata: Metadata = {
   title: `${profile.name} — ${profile.role}`,
   description: profile.tagline,
   keywords: [
+    "소프트웨어 엔지니어",
+    "Software Engineer",
     "프론트엔드 개발자",
     "프론트엔드 리드",
     "Senior Frontend Engineer",
