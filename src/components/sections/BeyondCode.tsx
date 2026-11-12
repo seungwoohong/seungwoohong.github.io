@@ -79,6 +79,29 @@ export function BeyondCode() {
                       ↗
                     </span>
                   </a>
+                ) : c.links ? (
+                  <div className="flex flex-col gap-1.5">
+                    <span>{c.text}</span>
+                    <span className="flex flex-wrap gap-x-3 gap-y-1">
+                      {c.links.map((l) => (
+                        <a
+                          key={l.href}
+                          href={l.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="group/act inline-flex items-start gap-0.5 text-sm font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-4 transition-colors hover:decoration-[var(--accent)]"
+                        >
+                          <span>{l.label}</span>
+                          <span
+                            aria-hidden
+                            className="no-underline transition-transform group-hover/act:translate-x-0.5"
+                          >
+                            ↗
+                          </span>
+                        </a>
+                      ))}
+                    </span>
+                  </div>
                 ) : (
                   <span>{c.text}</span>
                 )}

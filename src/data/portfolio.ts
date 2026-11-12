@@ -442,9 +442,23 @@ export const writing: Post[] = [
   },
 ];
 
-export type Activity = { text: string; href?: string };
+export type Activity = {
+  text: string;
+  href?: string;
+  links?: { label: string; href: string }[];
+};
 
 export const community: Activity[] = [
+  {
+    text: "외부 개발 스터디에서 Claude Code 강의 5회 진행 (2026.04–05)",
+    links: [
+      { label: "Skills", href: "https://claude.ai/artifact/WRKVLzN2fVzq5uTwYYTUev" },
+      { label: "서브 에이전트", href: "https://claude.ai/artifact/JBHKBRwfTLZcFPmeH2y64b" },
+      { label: "토큰 최적화", href: "https://claude.ai/artifact/69pSVtEsnKTcLaYsYVCYFV" },
+      { label: "플러그인 & MCP", href: "https://claude.ai/artifact/GJJB2JSBS2s7ttkyAesz8q" },
+      { label: "플러그인 마켓플레이스", href: "https://claude.ai/artifact/Q27ywNeifx8AfQLSkR8Ncn" },
+    ],
+  },
   {
     text: "주니어 개발자 멘토링 및 사내 교육 자료 제작·발표",
     href: "https://slides.com/alwls601",
