@@ -70,7 +70,7 @@ export function Header() {
           <MagneticButton
             as="a"
             href={profile.resumeUrl}
-            download
+            download={profile.resumeFileName}
             strength={0.25}
             className="hidden rounded-full border border-border bg-card px-4 py-2 text-xs font-medium text-foreground transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)] sm:inline-block"
           >

@@ -9,6 +9,7 @@ export const profile = {
   email: "seungwoo921226@gmail.com",
   phone: "010-5210-4711",
   resumeUrl: "/resume.pdf",
+  resumeFileName: "제품 중심 소프트웨어 엔지니어_홍승우.pdf",
   available: false,
   yearsOfExperience: 10,
 };
@@ -31,7 +32,7 @@ export const about = {
     "팀에서는 {코드 리뷰 문화 표준화}와 {업무 자동화}로 개발 병목을 줄이며 {전체 생산성}을 끌어올려 왔습니다.",
   ],
   competencies: [
-    "물류 플랫폼 프론트엔드 팀 리드로 프로젝트를 주도하고 점진적인 생산성 확보에 기여하며 팀 성과를 이끌어낸 경험",
+    "물류 플랫폼 프론트엔드 팀 리드로서 프로젝트를 주도하고, 팀 생산성을 점진적으로 끌어올려 성과를 이끌어낸 경험",
     "기획자·디자이너와 원활히 협업하고 사용자 피드백을 반영해 제품 완성도와 UX 개선",
     "CSS·JavaScript·PixiJS·ThreeJS 기반의 풍부한 인터랙션 개발 및 데이터 시각화 경험",
     "렌더링 성능 최적화로 대규모 데이터 프리즈 제거, 주요 페이지 로딩 속도 40% 단축",
@@ -116,7 +117,7 @@ export const experiences: Experience[] = [
     summary: "자사 여러 앱에서 공용으로 활용되는 챗봇 플랫폼을 개발·운영했습니다.",
     focus: [
       "{Angular 1 → Angular 6 마이그레이션}을 주도해 안정성·확장성 확보",
-      "Docker 기반 {멀티 테스트 환경}을 구축해 QA 자동화, 코드 구조 개선",
+      "Docker 기반 {멀티 테스트 환경}을 구축해 QA를 자동화하고 코드 구조 개선",
       "React Native 앱·{블록체인 지갑} 기능을 구현해 신규 서비스 런칭에 기여",
     ],
     related: ["chatbot-platform", "inbichat", "wonderful-lotto"],
@@ -162,10 +163,10 @@ export const projects: Project[] = [
     summary: "영어·독일어 등 다국어로 서비스되는 글로벌 웹툰 플랫폼의 웹 프론트엔드.",
     highlights: [
       "웹 번들 최적화(코드 스플리팅·지연 로딩·의존성 정리)로 초기 번들 {11MB → 916KB (약 92% 감소)}",
-      "웹 성능 개선으로 관리 메인 화면 초기 로드 속도 {30% 이상 단축}",
+      "웹 성능 개선으로 메인 화면 초기 로드 속도 {30% 이상 단축}",
       "{컬렉션 기능} 개발로 사용자 커뮤니티 형성 및 {리텐션 증가}에 기여",
       "웹·앱 {구독 멤버십} 기능 개발로 {구독 전환율 향상}에 기여",
-      "{React Native Web}로 앱·웹 코드를 공유하는 하이브리드 개발",
+      "{React Native Web}으로 앱·웹 코드를 공유하는 하이브리드 개발",
       "다국가 트래픽 환경에서 안정적 렌더링을 위한 코드 품질·구조 개선",
     ],
     role: "Frontend Engineer",
@@ -225,7 +226,7 @@ export const projects: Project[] = [
     summary: "Google 스프레드시트를 단일 소스로 삼아 i18n JSON을 자동 생성하는 CLI.",
     highlights: [
       "PR 리뷰·CI 업로드 자동화로 긴급 번역 수정 {수십 분 → 1분대}",
-      "환경별(prod/stage/dev) 리소스 업로드 자동화로 기획-개발 {커뮤니케이션 비용 제거}",
+      "환경별(prod/stage/dev) 리소스 업로드 자동화로 기획–개발 {커뮤니케이션 비용 제거}",
     ],
     role: "Creator",
     year: "2023",
@@ -257,7 +258,7 @@ export const projects: Project[] = [
     summary: "환율 실시간 등락을 캔들 차트로 시각화해 게임 시간과 동기화한 몰입형 게임. 프론트엔드부터 백엔드까지 풀스택 구축.",
     highlights: [
       "{ECharts} 캔들 애니메이션 최적화로 {프레임 드랍 제거}",
-      "탭 비활성화 시 시간 오차를 해결해 안정적 실시간 동기화, {매출 상승}에 기여",
+      "탭 비활성화 시 시간 오차를 해결해 안정적인 실시간 동기화를 확보하고 {매출 상승}에 기여",
     ],
     role: "Fullstack",
     year: "2020",
