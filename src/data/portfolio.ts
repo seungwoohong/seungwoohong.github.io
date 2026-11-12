@@ -102,6 +102,7 @@ export const experiences: Experience[] = [
     focus: [
       "React·jQuery 프론트엔드와 PHP·Node.js·MySQL·Redis 백엔드를 아우르는 풀스택 개발",
       "실시간 캔들 차트 게임·애니메이션 게임 리뉴얼·중계 등 핵심 실시간 서비스를 런칭",
+      "{쿼리 성능 모니터링}·개선과 {MySQL 5 → 8 마이그레이션} 수행",
       "{AWS·NGINX·Jenkins} 기반 CI/CD 구축으로 배포 안정성·개발 생산성 향상",
     ],
     related: ["fx-game", "named-renewal"],
