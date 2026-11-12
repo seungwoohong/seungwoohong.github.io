@@ -450,7 +450,7 @@ export type Activity = {
 
 export const community: Activity[] = [
   {
-    text: "외부 개발 스터디에서 Claude Code 강의 5회 진행 (2026.04–05)",
+    text: "외부 개발 스터디에서 Claude Code 주제로 5회 발표 (2026.04–05)",
     links: [
       { label: "Skills", href: "https://claude.ai/artifact/WRKVLzN2fVzq5uTwYYTUev" },
       { label: "서브 에이전트", href: "https://claude.ai/artifact/JBHKBRwfTLZcFPmeH2y64b" },
