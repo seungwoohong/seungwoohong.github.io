@@ -7,7 +7,7 @@ export function Skills() {
     <Section id="skills" index="04" title="Skills">
       <Reveal className="isolate grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2">
         {skills.map((group) => (
-          <RevealItem key={group.category} className="bg-card p-6 sm:p-7">
+          <RevealItem key={group.category} className="bg-card p-6 sm:p-7 sm:odd:last:col-span-2">
             <h3 className="mb-4 font-mono text-xs uppercase tracking-wider text-subtle">
               {group.category}
             </h3>

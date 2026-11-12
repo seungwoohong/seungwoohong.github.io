@@ -69,12 +69,12 @@ export function BeyondCode() {
                     href={c.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="group/act inline-flex items-start gap-1 text-foreground transition-colors hover:text-[var(--accent)]"
+                    className="group/act inline-flex items-start gap-1 font-medium text-[var(--accent)] underline decoration-[var(--accent)]/40 underline-offset-4 transition-colors hover:decoration-[var(--accent)]"
                   >
                     <span>{c.text}</span>
                     <span
                       aria-hidden
-                      className="text-[var(--accent)] transition-transform group-hover/act:translate-x-0.5"
+                      className="no-underline transition-transform group-hover/act:translate-x-0.5"
                     >
                       ↗
                     </span>

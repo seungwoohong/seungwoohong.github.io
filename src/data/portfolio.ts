@@ -10,7 +10,7 @@ export const profile = {
   phone: "010-5210-4711",
   resumeUrl: "/resume.pdf",
   available: false,
-  yearsOfExperience: 9,
+  yearsOfExperience: 10,
 };
 
 export const socials = [
@@ -26,7 +26,7 @@ export const socials = [
 export const about = {
   lead: "{사용자를 위한 질 높은 제품}을 만드는 것, 그것이 제 개발의 기준입니다.",
   paragraphs: [
-    "{9년 차 프론트엔드 개발자}로, {React·TypeScript} 기반 물류 SaaS 플랫폼을 런칭부터 스케일업까지 {5년간 프론트엔드 리드}로 총괄했습니다.",
+    "{10년 차 프론트엔드 개발자}로, {React·TypeScript} 기반 물류 SaaS 플랫폼을 런칭부터 스케일업까지 {5년간 프론트엔드 리드}로 총괄했습니다.",
     "{기술을 비즈니스 성과로 연결}하는 개발을 지향합니다. 제품에서는 {웹 접근성과 UI/UX}를 점진적으로 개선해 사용자 편의성을 높였고, 2D/3D 재고 시각화와 가상 DAS SaaS 개발로 {수십억 규모 시리즈 A 투자 유치}와 {신규 매출 창출}에 기여했습니다.",
     "팀에서는 {코드 리뷰 문화 표준화}와 {업무 자동화}로 개발 병목을 줄이며 {전체 생산성}을 끌어올려 왔습니다.",
   ],
@@ -39,7 +39,7 @@ export const about = {
     "Node.js·PHP·MySQL·GCP 기반 풀스택 개발 및 다수의 CI/CD 구축 경험",
   ],
   highlights: [
-    { value: "9+", label: "년 경력 · 5년 FE 리드 총괄" },
+    { value: "10+", label: "년 경력 · 5년 FE 리드 총괄" },
     { value: "수십억", label: "시리즈 A 투자 유치 기여" },
     { value: "40%", label: "페이지 로딩 속도 단축" },
     { value: "75%", label: "배포 시간 단축 (15→4분)" },
@@ -85,11 +85,12 @@ export const experiences: Experience[] = [
     focus: [
       "프론트엔드 팀 리드로서 아키텍처 설계·핵심 기능 개발·운영 자동화 전반을 주도",
       "디자인 시스템(MUI)·CI/CD·i18n 자동화 등 팀 생산성 인프라를 구축",
-      "코드 리뷰 프로세스 표준화와 주니어 멘토링으로 팀 개발 역량 강화",
+      "코드 리뷰 프로세스 표준화로 팀 개발 역량 강화",
+      "{신입 개발자 멘토}로서 온보딩·사내 교육을 맡아 팀 적응과 성장을 지원",
       "가상 DAS(ezDAS) 등 신규 SaaS를 기획 단계부터 발굴·리드하며 사업 확장에 기여",
     ],
     related: ["ezstorage", "inventory-map", "ezdas", "translation-generator"],
-    stack: ["React", "TypeScript", "Apollo Client", "MUI", "PixiJS", "ThreeJS", "GCP/GKE", "Kubernetes", "GitHub Actions"],
+    stack: ["React", "TypeScript", "GraphQL", "Apollo Client", "MUI", "PixiJS", "ThreeJS", "GCP/GKE", "Kubernetes", "GitHub Actions"],
   },
   {
     company: "비에스에스스포츠 (BSS Sports)",
@@ -161,6 +162,8 @@ export const projects: Project[] = [
     highlights: [
       "웹 번들 최적화(코드 스플리팅·지연 로딩·의존성 정리)로 초기 번들 {11MB → 1MB (약 91% 감소)}",
       "웹 성능 개선으로 관리 메인 화면 초기 로드 속도 {30% 이상 단축}",
+      "{컬렉션 기능} 개발로 사용자 커뮤니티 형성 및 {리텐션 증가}에 기여",
+      "웹·앱 {구독 멤버십} 기능 개발",
       "{React Native Web}로 앱·웹 코드를 공유하는 하이브리드 개발",
       "다국가 트래픽 환경에서 안정적 렌더링을 위한 코드 품질·구조 개선",
     ],
@@ -189,7 +192,7 @@ export const projects: Project[] = [
     ],
     role: "Frontend Lead",
     year: "2020 — 2025",
-    stack: ["React", "TypeScript", "Apollo Client", "MUI", "GCP/GKE", "Docker", "GitHub Actions"],
+    stack: ["React", "TypeScript", "GraphQL", "Apollo Client", "MUI", "GCP/GKE", "Docker", "GitHub Actions"],
     links: [
       { label: "Website", href: "https://ezstorage.io/intro" },
       { label: "YouTube", href: "https://www.youtube.com/@bold9" },
@@ -266,7 +269,8 @@ export const projects: Project[] = [
     summary: "스포츠 커뮤니티 플랫폼의 주요 실시간 애니메이션 게임 리뉴얼과 대규모 중계 시스템.",
     highlights: [
       "렌더링·로딩 최적화로 메인 페이지 로딩 {2초대 → 0.3초 이내}",
-      "{Visibility API} 기반 시간 동기화로 진행 오차 해결",
+      "{Node.js} 기반 실시간 채팅 서버 관리·운영",
+      "{PHP·Node.js} 서버 유지보수",
       "AWS·NGINX·Jenkins {CI/CD}로 배포 안정성 확보",
     ],
     role: "Fullstack",
@@ -377,6 +381,10 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
+    category: "Tools",
+    items: ["Git", "Figma", "Claude Code"],
+  },
+  {
     category: "Practices",
     items: [
       "CI/CD",
@@ -397,6 +405,7 @@ export const marqueeSkills = [
   "PixiJS",
   "ThreeJS",
   "WebGL",
+  "GraphQL",
   "Apollo Client",
   "React Query",
   "GCP",
@@ -414,7 +423,8 @@ export type Post = { title: string; note: string; url?: string };
 export const writing: Post[] = [
   {
     title: "이벤트 루프 깊게 알아보기",
-    note: "자바스크립트 런타임의 태스크 큐·마이크로태스크 동작 원리 심층 분석",
+    note: "Node.js 런타임 구조(libuv·스레드 풀)부터 이벤트 루프 6단계, 마이크로태스크·nextTick 우선순위까지 심층 분석",
+    url: "https://app.notion.com/p/honground/4169a991424880bbab55d58f2be7d7c0",
   },
   {
     title: "Translation 파일 업로드 플로우 개선기",
