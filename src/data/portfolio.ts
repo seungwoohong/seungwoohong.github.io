@@ -363,7 +363,11 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "State & Data",
-    items: ["Zustand", "React Query", "Apollo Client", "GraphQL", "MySQL", "Redis"],
+    items: ["Zustand", "React Query", "Apollo Client", "GraphQL"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "PHP", "MySQL", "Redis", "Socket.io"],
   },
   {
     category: "Visualization & Graphics",
